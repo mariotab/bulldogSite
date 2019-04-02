@@ -1,0 +1,277 @@
+
+.carousel{
+	z-index: 0;
+	.carousel-inner{
+		height: 620px;
+	}
+	.carousel-control-prev-left{
+		width: 70px;
+	    height: 70px;
+	    bottom: 70px;
+	    top: auto;
+	    left: 200px;
+	    background:rgba(0,0,0,0.4);
+	}
+	.carousel-control-prev-right{
+		width: 70px;
+	    height: 70px;
+	    bottom: 70px;
+	    top: auto;
+	    left: 272px;
+	    background:rgba(0,0,0,0.4);
+	 }
+	.carousel-control-next-icon, .carousel-control-prev-icon {
+	    width: 30px;
+	    height: 30px;
+	}
+}
+
+.homeHeader{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+	.headerH1{
+		font-size: 90px;
+		color: #fff;
+		font-family: Srisakdi;
+		margin: 70px auto 30px 70px;
+		float: left;
+		
+	 }
+	 nav{
+	 	overflow: hidden;
+	 	margin: 100px 180px auto auto;
+	 	float: right;
+	 	font-size: 45px;
+	 	
+	 	.nav-item{
+	 		padding: 0 30px;
+	 		font-family: Raleway;
+	 		transition: all 0.25s;
+	 	}
+	 	.nav-item:hover{
+	 		background-color: #f7941d;
+	 		border-radius: 30px;
+	 	}
+	 	.nav-link{
+	 		color: #fff!important;
+	 	}
+	 	.navbar-toggler-icon {
+    		background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
+    	}
+    	.navbar-toggler{
+    		border-color: rgba(0,0,0,0);
+    		font-size: 7vmin;
+    	}
+    	.navbar-toggler:focus{
+    		outline:none;
+    	}
+}
+.bacgraundImgForSmolDevices{
+	display: none;
+	//background-image: url(../img/4.jpg);
+	img{
+		display: block;
+	}
+
+}
+.textForSliderBlock{
+	position: absolute;
+    top: 320px;
+    left: 350px;
+    color: #fff;
+    h3{
+    	font-size: 70px;
+    }
+    p{
+    	font-size: 30px;
+    	text-align: justify;
+    }
+}
+.aboutDog{
+	overflow: hidden;
+    padding: 75px 0 79px 0;
+    background: #e2e2e2;
+    strong{
+    	font: 36px/1em 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    	color: #333;
+    	display: block;
+    	margin-bottom: 26px;
+    }
+    p{
+    line-height: 19px;
+    }
+}
+.aboutUs{
+	.fotoBlock{
+		padding: 0;
+		max-height: 516px;
+		overflow: hidden;
+		img{
+			width: 100%;
+			display: block;
+		}
+	}	
+	.textBlock{
+		padding: 40px 60px 0 60px;
+		h3{
+			font: 36px/1em 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    		padding-bottom: 25px;
+		}
+		p{
+			text-align: justify;
+		}
+	}
+}
+
+
+.galelryBlock{
+	background: #e2e2e2;
+	.galleryTitle{
+		padding-top:15px;
+		font: 36px/1em 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		text-align: center;
+	}
+	.slider_circle_10{
+		margin-top: -12vw;
+	}
+}
+.contactsBlock{
+	h2{
+
+		margin-top: 5vh;
+		font:36px/1em 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		text-align: center;
+	}
+	ul{
+		margin-bottom: 5vh;
+		margin-top: 5vh;
+		width: 100%;
+    	text-align: center;
+		list-style: none;
+    	display: inline-block;
+    	li{
+    		display: inline;
+    		font-size: 5vw;
+    		margin-right:6vw;
+    		a{
+    			color: #ff3d00;
+    			transition: all 0.3s;
+    		}
+    		a:hover{
+    			text-decoration: none;
+    			color: #444444;
+    		}
+    	}
+	}
+	.phone{
+		margin-top: 6vh;
+		margin-bottom: 6vh;
+		text-align: center;
+		font-size: 6vh;
+		a{
+			color: #000;
+		}
+		a:hover{
+			text-decoration: none;
+    		color: #444444;
+		}
+	}
+}
+
+
+@media screen and (max-width: 1700px) {
+  	.homeHeader{
+	 	nav{
+	 	margin: 100px 5px auto auto;
+	 	float: right;
+	 	}
+	}	
+}
+@media screen and (max-width: 1477px) {
+  	.homeHeader {
+  		.headerH1{
+			margin: 70px auto 30px 2px;
+	 	}
+	 	nav{	 	
+	 	font-size: 40px;
+	 	}
+	}	
+	
+}
+@media screen and (max-width: 1371px) {
+  	#carouselExampleControls{
+  		display: none;
+  	}
+  	.textForSliderBlock{
+  		display: none;
+  	}
+  	.bacgraundImgForSmolDevices{
+  		display: block;
+  		img{
+  			width: 100%;
+  		}
+  	}
+  	.homeHeader {
+  		.headerH1{
+			display: none;
+	 	}
+  		nav{
+	 		margin: 40px auto auto auto;
+	 		float: right;
+	 		width: 100%;
+		}
+	}
+	.aboutUs{	
+		.textBlock{
+			//padding: 75px 0 79px 0;
+		}
+	}				
+}
+@media screen and (max-width: 991px) {
+ 	.homeHeader{
+ 		nav{
+	 		margin: 10px ;
+	 		font-size: 5vmin ;
+	 		overflow: visible;
+	 		.navbar-toggler{
+	 			z-index: 2;
+	 		}
+	 		.navbar-collapse{
+	 			    padding-left: 14vmin;
+	 			    margin-top: -11vmin;
+    				top: 0;
+    				width: 100%;
+    				.nav-item{
+    					width: 40vmin;
+    					margin-top: 2px;
+    					background-color: rgba(0,0,0,0.5);					
+    				}
+	 		}
+	 	}
+	}
+	.aboutUs{
+		.fotoBlock{
+			display: none;
+		}	
+		.textBlock{
+			padding: 10px;
+			h3{
+    			padding-bottom: 10px;
+			}
+			p{
+				text-align: justify;
+			}
+		}
+ 	}
+ 	.contactsBlock{
+	ul{		
+    	li{
+    		font-size: 5vh;
+    		margin-right:6vw;
+    	}
+	}
+}	
+}
